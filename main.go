@@ -44,12 +44,12 @@ func main() {
 
 	scheduler.PrintMetrics("1. FCFS", scheduler.RunFCFS(processes))
 	scheduler.PrintMetrics("2. SJF (Non-Preemptive)", scheduler.RunSJF(processes))
-	scheduler.PrintMetrics("3. LJF (Non-Preemptive)", scheduler.RunLJF(processes))
+	// scheduler.PrintMetrics("3. LJF (Non-Preemptive)", scheduler.RunLJF(processes))
 	scheduler.PrintMetrics("4. Round Robin (TQ=2)", scheduler.RunRoundRobin(processes, 2))
 	scheduler.PrintMetrics("5. Priority (Preemptive)", scheduler.RunPriorityPreemptive(processes))
 	scheduler.PrintMetrics("6. SRTF", scheduler.RunSRTF(processes))
-	scheduler.PrintMetrics("7. LRTF", scheduler.RunLRTF(processes))
-	scheduler.PrintMetrics("8. HRRN", scheduler.RunHRRN(processes))
+	// scheduler.PrintMetrics("7. LRTF", scheduler.RunLRTF(processes))
+	// scheduler.PrintMetrics("8. HRRN", scheduler.RunHRRN(processes))
 
 	fmt.Println("\n==================================================")
 	fmt.Println("  SIMULATION 2: TRANSIENT EVENT WORKLOAD")
@@ -59,10 +59,10 @@ func main() {
 
 	scheduler.PrintMetrics("1. FCFS (Transient)", scheduler.RunFCFS(transientProcesses))
 	scheduler.PrintMetrics("2. SJF (Transient)", scheduler.RunSJF(transientProcesses))
-	scheduler.PrintMetrics("3. LJF (Transient)", scheduler.RunLJF(transientProcesses))
+	// scheduler.PrintMetrics("3. LJF (Transient)", scheduler.RunLJF(transientProcesses))
 	scheduler.PrintMetrics("4. Round Robin (Transient)", scheduler.RunRoundRobin(transientProcesses, 2))
 	scheduler.PrintMetrics("5. Priority (Transient)", scheduler.RunPriorityPreemptive(transientProcesses))
 	scheduler.PrintMetrics("6. SRTF (Transient)", scheduler.RunSRTF(transientProcesses))
-	scheduler.PrintMetrics("7. LRTF (Transient)", scheduler.RunLRTF(transientProcesses))
-	scheduler.PrintMetrics("8. HRRN (Transient)", scheduler.RunHRRN(transientProcesses))
+	// scheduler.PrintMetrics("7. LRTF (Transient)", scheduler.RunLRTF(transientProcesses))
+	// scheduler.PrintMetrics("8. HRRN (Transient)", scheduler.RunHRRN(transientProcesses))
 }
