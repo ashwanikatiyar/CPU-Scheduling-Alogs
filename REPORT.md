@@ -1,5 +1,3 @@
-go run main.go > "/Users/ashwanikatiyar/Work/UMKC/1st Sem/Adv Operating System/cpu_scheduling_go_project/output/output.md"
-
 # CPU Scheduling Simulation & Transient Event Analysis
 **Course:** Advanced Operating Systems (UMKC)  
 **Implementation Language:** Go (Golang)  

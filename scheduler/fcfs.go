@@ -7,6 +7,9 @@ func RunFCFS(input []Process) []Process {
 	copy(procs, input)
 
 	sort.Slice(procs, func(i, j int) bool {
+		if procs[i].ArrivalTime == procs[j].ArrivalTime {
+			return procs[i].ID < procs[j].ID
+		}
 		return procs[i].ArrivalTime < procs[j].ArrivalTime
 	})
 
